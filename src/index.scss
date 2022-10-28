@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #6baa3f;
+  --secondary-color: #cddfa0;
+  --third-color: #191919;
+  --border-color: #f1f1f1;
+  --text-color: #fff;
+  --white-color: #fff;
+  --black-color: rgb(0, 0, 0);
+  --green-color: #25D366;
+  --bg-color: #040404;
+  --btn-icon-color: #242424;
+  --font-family: 'Work Sans', sans-serif;
+  --font-size: 1vw;
+  --ease: cubic-bezier(0.23, 0.48, 0.26, 0.94);
+  --gradient-color: linear-gradient(120deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+
+  @media only screen and (min-width:2560px) {
+    --font-size: 1rem;
+  }
+
+  @media only screen and (max-width:1200px){
+    --font-size: 1rem;
+  }
+
+}
+
+
+
+html {
+  box-sizing: border-box;
+  font-size: 17px;
+
+  @media screen and (max-width:991px) {
+      font-size: 14px;
+  } 
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1.5;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:focus {
+      outline: none;
+      color: var(--text-color);
+  }
+
+  &:hover {
+      outline: none;
+      text-decoration: none;
+      color: var(--text-color);
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+}
+
+ol,ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+  /* Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--third-color) var(--bg-color);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--bg-color);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color:  var(--third-color);
+  }

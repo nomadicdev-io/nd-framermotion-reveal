@@ -46,7 +46,7 @@ const BannerStyled = styled.section`
     position: relative;
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     overflow: hidden;
 `;
 
@@ -206,7 +206,9 @@ const HeaderNavStyled = styled.div`
 `
 
 const BannerTextStyled = styled.div`
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: block;
     width: 100%;
     height: 50vh;

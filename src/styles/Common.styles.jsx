@@ -50,6 +50,14 @@ const BannerStyled = styled.section`
     overflow: hidden;
 `;
 
+const BannerInnerStyled = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+`;
+
 const BannerVideoStyled = styled.div`
     position: absolute;
     top: 0;
@@ -141,7 +149,7 @@ const HeaderToggleStyled = styled.button`
             transform: scaleX(0.75);
         }
     }
-`
+`;
 
 const HeaderImageStyled = styled.div`
     position: relative;
@@ -162,7 +170,7 @@ const HeaderImageStyled = styled.div`
             height: 100%;
         }
     }
-`
+`;
 
 const HeaderNavStyled = styled.div`
     position: relative;
@@ -203,10 +211,10 @@ const HeaderNavStyled = styled.div`
         }
     }
 
-`
+`;
 
 const BannerTextStyled = styled.div`
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: block;
@@ -254,7 +262,8 @@ const BannerTextStyled = styled.div`
         }
     }
 
-`
+`;
+
 const ContainerStyled = styled.div`
     position: relative;
     display: block;
@@ -264,11 +273,12 @@ const ContainerStyled = styled.div`
     min-width: 80%;
     margin-left: auto;
     margin-right: auto;
-`
+`;
 
 export {
     MainStyled,
     BannerStyled,
+    BannerInnerStyled,
     BannerVideoStyled,
     LoadingStyled,
     HeaderStyled,

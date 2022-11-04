@@ -1,6 +1,6 @@
 import BannerText from "../components/BannerText";
 import BannerVideo from "../components/BannerVideo";
-import { BannerStyled } from "../styles/Common.styles";
+import { BannerInnerStyled, BannerStyled } from "../styles/Common.styles";
 import { useScroll } from "framer-motion";
 import { useRef } from "react";
 
@@ -13,8 +13,10 @@ const Banner = ()=> {
 
     return (
         <BannerStyled ref={ref}>
-            <BannerVideo />
-            <BannerText yProgress={scrollYProgress}/>
+            <BannerInnerStyled>
+                <BannerVideo />
+                <BannerText yProgress={scrollYProgress}/>
+            </BannerInnerStyled>
         </BannerStyled>
     )
 }

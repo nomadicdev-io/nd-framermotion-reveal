@@ -30,10 +30,10 @@ const BannerVideo = ()=> {
             variants={mainAnim}
             className="inner_">
 
-               <motion.div 
-               variants={videoAnim}
-               className="video_"
-               >
+                <motion.div 
+                    variants={videoAnim}
+                    className="video_"
+                >
                     <video loop muted autoPlay={true} playsInline>
                         <source src="/banner-video.mp4" type="video/mp4"/>
                     </video>
